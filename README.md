@@ -1,6 +1,6 @@
 # Project Title
 
-A short description of your project goes here.
+FFX Preset Browser
 
 ## Preview
 
