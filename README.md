@@ -9,11 +9,8 @@ A short description of your project goes here.
   <img src="2.png" alt="Preview 2" width="300"/>
 </div>
 
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
+## Release Installation
+Download the release and use the bat installer win/mac depends on ur os
 
 ## Installation
 
@@ -26,3 +23,9 @@ cd yourproject
 
 # Install dependencies
 npm install
+
+
+
+
+
+
