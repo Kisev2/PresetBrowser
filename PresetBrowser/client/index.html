@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Presets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+    <header id="topbar">
+        <button class="icon-btn" id="btn-add-folder" title="Add Folder">+</button>
+        <button class="icon-btn" id="btn-remove" title="Remove Folder" disabled>−</button>
+        <button class="icon-btn" id="btn-refresh" title="Refresh">↺</button>
+        <div class="topbar-title">
+            <img src="assets/KIREL.png" alt="KIREL" class="topbar-logo">
+        </div>
+        <div class="search-wrap">
+            <input type="text" id="search-input" placeholder="Search" autocomplete="off" spellcheck="false">
+        </div>
+        <button class="icon-btn" id="btn-settings" title="Settings">⚙</button>
+        <button class="icon-btn" id="btn-reveal" title="Reveal in Finder" disabled>↗</button>
+    </header>
+
+    <div id="body">
+        <aside id="sidebar">
+            <div id="folder-tree"></div>
+        </aside>
+        <div id="resizer"></div>
+        <main id="main-panel">
+            <div id="preset-list"></div>
+            <div id="empty-state">
+                <div class="empty-text">Add a folder with .ffx files</div>
+            </div>
+        </main>
+    </div>
+
+    <div id="status-bar">Ready</div>
+
+<div id="settings-overlay" class="modal-overlay" hidden>
+    <div class="settings-panel" role="dialog" aria-labelledby="settings-heading">
+        <div class="settings-head">
+            <h2 id="settings-heading" class="settings-heading">Folder paths</h2>
+            <button type="button" class="icon-btn settings-close" id="btn-settings-close" title="Close">×</button>
+        </div>
+        <p class="settings-hint">Same as the toolbar <span class="settings-hint-key">+</span> — add preset root folders here or there.</p>
+        <div id="settings-path-list" class="settings-path-list"></div>
+        <button type="button" class="settings-add-btn" id="btn-settings-add-folder">Add folder…</button>
+        
+        <!-- Added info section -->
+        <div class="settings-info" style="margin-top: 20px; font-size: 0.9em; color: #666;">
+            This extension is brought to you by <strong>KIREL</strong>.  
+            If you want more scripts/tools in the future, join our <a href="https://discord.gg/bykpVhyPXD" target="_blank" rel="noopener noreferrer">Discord</a>.
+        </div>
+    </div>
+</div>
+
+</div>
+<script src="lib/CSInterface.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
