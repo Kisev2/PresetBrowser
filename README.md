@@ -12,17 +12,6 @@ FFX Preset Browser
 ## Release Installation
 Download the release and use the bat installer win/mac depends on ur os
 
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/yourproject.git
-
-# Navigate to the project folder
-cd yourproject
-
-# Install dependencies
-npm install
 
 
 
